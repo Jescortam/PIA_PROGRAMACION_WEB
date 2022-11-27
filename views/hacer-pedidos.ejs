@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilosH.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <body style="background-image:url(FondoConst.jpg); background-size: cover; background-repeat: no-repeat;">
+    <div class="container">
+      <div class="BarNav">
+        <div class="Titulo Construrama">Materiales Quirino: Construrama</div>
+        <div class="Nav1 Logo"><img src="imgs/Logo.png" height="130px" width="190px"></div>
+        <div class="Nav2 Barra">
+          <a href="Index">Inicio</a>
+          <a href="">Contactos</a>
+          <a href="">Video</a>
+        </div>
+      </div>
+      <div class="Texto">
+        <div class="Titulos Producto1">
+          <h2 class="CajasT">Saco de Cemento Grande 20kgs.</h2><img src="imgs/Cemento.png" width="125px" height="125px">
+          <h3 class="Desc">Costo: $200</h3>
+        </div>
+        <div class="Titulos Producto2">
+          <h2 class="CajasT">Varillas de Acero</h2><img src="imgs/Acero.png" width="125px" height="125px">
+          <h3 class="Desc">Costo: $300</h3>
+        </div>
+        <div class="Titulos Producto3">
+          <h2 class="CajasT">Saco de Arena Mixta</h2><img src="imgs/Arena.png" width="125px" height="125px">
+          <h3 class="Desc">Costo: $100</h3>
+        </div>
+        <div class="Titulos Producto4">
+          <h2 class="CajasT">Block (Normal o Termico)</h2><img src="imgs/Block.png" width="125px" height="125px">
+          <h3 class="Desc">Costo: $5 por Block</h3>
+        </div>
+        <div class="Titulos Producto5">
+          <h2 class="CajasT">Pliegue de Plastico Negro</h2><img src="imgs/Plastico.png" width="125px" height="125px">
+          <h3 class="Desc">Costo: $150 por 10mts</h3>
+        </div>
+        <div class="Titulos Producto6">
+          <h2 class="CajasT">Vigas de Acero y Varilla</h2><img src="imgs/Vigas.png" width="125px" height="125px">
+          <h3 class="Desc">Costo: $450</h3>
+        </div>
+      </div>
+      <div class="FormularioCompra">
+        <h1 class="TCompra">Haga su Pedido de Compra, por favor:</h1>
+        <form class="Estilo" method="POST" action="/pedidos">
+          <div>
+            <label for="productName">Nombre de producto:</label>
+            <input class="Respuestas" id="productName" name="productName">
+          </div>
+          <div>
+            <label for="quantity">Cantidad:</label>
+            <input class="Respuestas" id="quantity" name="quantity" type="number">
+          </div>
+          <div>
+            <label for="unitCost">Costo unitario:</label>
+            <input class="Respuestas" id="unitCost" name="unitCost" type="number" step="0.01">
+          </div>
+          <div>
+            <label for="clientName">Nombre del cliente:</label>
+            <input class="Respuestas" id="clientName" name="clientName">
+          </div>
+          <div>
+            <label for="clientAddress">Dirección del cliente:</label>
+            <input class="Respuestas" id="clientAddress" name="clientAddress">
+          </div>
+          <button class="boton4">Enviar</button>
+        </form>
+      </div>
+
+</html>

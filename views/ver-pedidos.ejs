@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilosP.css">
+  <title>Document</title>
+</head>
+
+<body style="background-image:url(FondoConst.jpg); background-size: cover; background-repeat: no-repeat;">
+  <div class="container">
+    <div class="BarNav">
+      <div class="Titulo Construrama">Materiales Quirino: Construrama</div>
+      <div class="Nav1 Logo"><img src="imgs/Logo.png" height="130px" width="190px"></div>
+      <div class="Nav2 Barra">
+        <a href="/">Inicio</a>
+        <a href="">Contactos</a>
+        <a href="">Video</a>
+      </div>
+    </div>
+    <div class="AreaPedidos">
+      <h2 class="TCompra">Historial de Material Comprado:</h2>
+      <div class="CajaP">
+        <div class="Texto">
+          <% for (let order of orders) { %>
+            <div>
+              <h2>
+                <%= order.productName %>
+              </h2>
+              <div>
+                Cantidad: <%= order.quantity %>
+              </div>
+              <div>
+                Total: <%= order.quantity * order.unitCost %>
+              </div>
+              <div>
+                Nombre del cliente: <%= order.clientName %>
+              </div>
+              <div>
+                Dirección del cliente: <%= order.clientAddress %>
+              </div>
+            </div>
+            <% } %>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
