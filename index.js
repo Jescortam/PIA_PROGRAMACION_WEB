@@ -42,6 +42,6 @@ app.get('/ver-pedidos', async (req, res) => {
 	res.render('ver-pedidos', { orders });
 });
 
-app.listen('3000', (req, res) => {
-	console.log('Listening on port 3000');
+app.listen(process.env.PORT, (req, res) => {
+	console.log('Listening!');
 });
